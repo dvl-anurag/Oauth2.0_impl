@@ -10,8 +10,8 @@ import (
 	"github.com/youtube/google-oauth/utils"
 )
 
-const gitClientID = "9db17190c4b7059db26c"
-const gitClientSecret = "b72321b186e1fdb010f8d5ab9198deda1d3619a9"
+const gitClientID = ""
+const gitClientSecret = ""
 
 func GoogleLogin(w http.ResponseWriter, r *http.Request) {
 	if r.Method != "GET" {

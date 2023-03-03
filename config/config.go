@@ -20,8 +20,8 @@ const OauthFacebookUrlAPI = "https://graph.facebook.com/v13.0/me?fields=id,name,
 func LoadConfig() {
 	// Oauth configuration for Google
 	AppConfig.GoogleLoginConfig = oauth2.Config{
-		ClientID:     "958040174312-ro5l4kr6c1b9nd0a65hfhsdnrloq3auf.apps.googleusercontent.com",
-		ClientSecret: "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",
+		ClientID:     "",
+		ClientSecret: "",
 		Endpoint:     google.Endpoint,
 		RedirectURL:  "http://localhost:8494/google_callback",
 		Scopes: []string{
@@ -32,8 +32,8 @@ func LoadConfig() {
 
 	// Oauth configuration for Facebook
 	AppConfig.FacebookLoginConfig = oauth2.Config{
-		ClientID:     "509113954720967",
-		ClientSecret: "ec5edab1ffebe8992863a33b4c60c810",
+		ClientID:     "",
+		ClientSecret: "",
 		Endpoint:     facebook.Endpoint,
 		RedirectURL:  "http://localhost:8494/fb_callback",
 		Scopes: []string{
